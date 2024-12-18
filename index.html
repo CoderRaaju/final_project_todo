@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Todo App</h1>
+    <form id="todo-form">
+      <input type="text" id="task-name" placeholder="Enter task name" required>
+      <input type="date" id="task-date" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search tasks...">
+      </div>
+      
+    <ul id="task-list"></ul>
+  </div>
+
+  <h2>Archived Tasks</h2>
+ <ul id="archived-list"></ul>
+
+ <h2>Pomodoro Timer</h2>
+ <div id="pomodoro-timer">
+   <span id="timer-display">5:00</span>
+   <button onclick="startPomodoro()">Start</button>
+ </div>
+
+ 
+  
+  <button id="theme-toggle">Toggle Theme</button>
+
+  
+ 
+  <script src="code.js"></script>
+</body>
+</html>
